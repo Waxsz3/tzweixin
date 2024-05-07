@@ -5,11 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #141414;
+            color: #fff;
+        }
+        img{
+            width: 30vh;
+            border-radius: 10px;
+            transition: linear .5s;
+            animation: img linear .5s;
+        }
+        @keyframes img {
+            0%{
+                transform: scale(0);
+                opacity: 0;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        p{
+            margin-top: 20px;
+            font-size: 2vh;
+            letter-spacing: 3px;
+            animation: img linear .5s;
+            
+        }
+    </style>
 </head>
 <body>
-    <!-- <a href="weixin://contacts/profile/cylll_123456">点击这里添加好友</a> -->
-    <a href="weixin://userinfo?userid=Fuwenxiang-">点击查看微信账号</a>
-
-
+    <img src="./微信图片_20240507194006.jpg" alt="">
+    <p>扫码添加微信</p>
 </body>
 </html>
